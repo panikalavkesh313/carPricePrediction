@@ -1,10 +1,9 @@
 import streamlit as st
 import pandas as pd
-import pickle
-import sklearn
+import joblib
 # Load trained model
 with open("car_model.pkl", "rb") as f:
-    model = pickle.load(f)
+    model = joblib.load(f)
     
 st.subheader("created_LAVKESH")
 st.title("🚗Price Prediction App")
