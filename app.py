@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-
+import sklearn
 # Load trained model
 with open("car_model.pkl", "rb") as f:
     model = pickle.load(f)
